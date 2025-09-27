@@ -2,50 +2,62 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsiveness -->
     <title>Contact - Feryel Mbarki</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background: #f9f9f9;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
         }
+
         .contact-card {
             background: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
             padding: 20px;
-            width: 350px;
+            width: 90%;       /* Utilise presque toute la largeur de l'écran */
+            max-width: 400px; /* Limite pour grands écrans */
             text-align: center;
         }
+
         .contact-card img {
-            width: 120px;
-            height: 120px;
+            width: 40%;        /* Image responsive */
+            max-width: 150px;
+            height: auto;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 15px;
         }
+
         .contact-card h2 {
             margin: 0;
             font-size: 22px;
             color: #333;
         }
+
         .contact-card p {
             margin: 5px 0;
             color: #555;
         }
+
         .download-btn {
             display: inline-block;
             margin-top: 15px;
-            padding: 10px 20px;
+            padding: 12px 25px;
             background-color: #000000;
             color: #fff;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
+            transition: background-color 0.3s ease;
         }
+
         .download-btn:hover {
             background-color: #7e7e7e;
         }
@@ -70,6 +82,3 @@
     </div>
 </body>
 </html>
-
-
-
